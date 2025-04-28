@@ -1,0 +1,4 @@
+D:\documents\CPP Practice\ehtasham.asm\ehtasham.asm\obj\Debug\net6.0\ehtasham.asm.GeneratedMSBuildEditorConfig.editorconfig
+D:\documents\CPP Practice\ehtasham.asm\ehtasham.asm\obj\Debug\net6.0\ehtasham.asm.AssemblyInfoInputs.cache
+D:\documents\CPP Practice\ehtasham.asm\ehtasham.asm\obj\Debug\net6.0\ehtasham.asm.AssemblyInfo.cs
+D:\documents\CPP Practice\ehtasham.asm\ehtasham.asm\obj\Debug\net6.0\ehtasham.asm.csproj.CoreCompileInputs.cache
