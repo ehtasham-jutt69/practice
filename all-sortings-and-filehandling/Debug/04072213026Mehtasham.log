@@ -1,0 +1,18 @@
+﻿  04072213026Mehtasham.cpp
+d:\documents\visual studio 2022\04072213026mehtasham\04072213026mehtasham\04072213026mehtasham.cpp(106): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\documents\visual studio 2022\04072213026mehtasham\04072213026mehtasham\04072213026mehtasham.cpp(148): warning C4244: '+=': conversion from '_Rep' to 'int', possible loss of data
+          with
+          [
+              _Rep=__int64
+          ]
+d:\documents\visual studio 2022\04072213026mehtasham\04072213026mehtasham\04072213026mehtasham.cpp(195): warning C4244: '+=': conversion from '_Rep' to 'int', possible loss of data
+          with
+          [
+              _Rep=__int64
+          ]
+d:\documents\visual studio 2022\04072213026mehtasham\04072213026mehtasham\04072213026mehtasham.cpp(239): warning C4244: '+=': conversion from '_Rep' to 'int', possible loss of data
+          with
+          [
+              _Rep=__int64
+          ]
+  04072213026Mehtasham.vcxproj -> D:\documents\Visual Studio 2022\04072213026Mehtasham\Debug\04072213026Mehtasham.exe
