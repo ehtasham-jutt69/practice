@@ -1,0 +1,3 @@
+﻿  bank.cpp
+D:\documents\Visual Studio 2022\bank\bank\bank.cpp(69,7): warning C4101: 'b': unreferenced local variable
+  bank.vcxproj -> D:\documents\Visual Studio 2022\bank\x64\Debug\bank.exe
