@@ -1,0 +1,3 @@
+﻿  square.cpp
+main.obj : error LNK2019: unresolved external symbol "public: double __cdecl Square::getlength(void)" (?getlength@Square@@QEAANXZ) referenced in function main
+D:\documents\Visual Studio 2022\carpet\x64\Debug\carpet.exe : fatal error LNK1120: 1 unresolved externals

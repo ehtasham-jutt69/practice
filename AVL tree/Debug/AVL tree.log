@@ -1,0 +1,13 @@
+﻿  AVL tree.cpp
+d:\documents\visual studio 2022\avl tree\avl tree.cpp(25): error C2059: syntax error: '<'
+  d:\documents\visual studio 2022\avl tree\avl tree.cpp(39): note: see reference to class template instantiation 'iterator<T1,T2>' being compiled
+d:\documents\visual studio 2022\avl tree\avl tree.cpp(25): error C2238: unexpected token(s) preceding ';'
+d:\documents\visual studio 2022\avl tree\avl tree.cpp(169): error C2989: 'avl': class template has already been declared as a non-class template
+  d:\documents\visual studio 2022\avl tree\avl tree.cpp(25): note: see declaration of 'avl'
+d:\documents\visual studio 2022\avl tree\avl tree.cpp(42): error C3857: 'avl': multiple template parameter lists are not allowed
+d:\documents\visual studio 2022\avl tree\avl tree.cpp(174): error C2059: syntax error: '<'
+d:\documents\visual studio 2022\avl tree\avl tree.cpp(178): error C2065: 'myAVL': undeclared identifier
+d:\documents\visual studio 2022\avl tree\avl tree.cpp(179): error C2065: 'myAVL': undeclared identifier
+d:\documents\visual studio 2022\avl tree\avl tree.cpp(180): error C2065: 'myAVL': undeclared identifier
+d:\documents\visual studio 2022\avl tree\avl tree.cpp(181): error C2065: 'myAVL': undeclared identifier
+d:\documents\visual studio 2022\avl tree\avl tree.cpp(182): error C2065: 'myAVL': undeclared identifier
