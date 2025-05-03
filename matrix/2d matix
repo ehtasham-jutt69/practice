@@ -1,0 +1,53 @@
+#include <iostream>
+using namespace std;
+void inst(int**a, int *b,int *c);
+{ 
+    int index;
+
+cout<< " enter the index number ";
+cin>>index;
+while (index >b)
+{
+    cout<< " you have enter an invalid index";
+    cin>>index;
+}
+for(int j=0;j<c;j++)
+{
+    for( int i=b;i>=index;i++)
+    {
+        a[i=1][j]=a[i][j];
+    }
+    cout<<"enter values";
+    cin>>[index][j];
+
+}  
+b++;
+
+
+}
+int main()
+{
+    int a[10][10];
+   {   cout<<"enter the number of rows";
+    cin>>b;
+    cout<<"enter the number of coloum";
+    cin>>c;
+   int **a=new int *[b];
+    for(int i=0;i<r;i++)
+    a[i]=new int [c];
+     }
+
+
+     cout<<"enter values in the array";
+
+    
+    for(int i=0;i<b;i++)
+    {
+        for(int j=0;j<c;j++)
+        {
+            cout<<a[i][j];
+
+        }
+        cout<<endl;
+    }
+}
