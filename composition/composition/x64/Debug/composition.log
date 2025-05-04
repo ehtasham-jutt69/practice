@@ -1,0 +1,7 @@
+﻿  composition.cpp
+D:\documents\Visual Studio 2022\composition\composition\composition.cpp(102,20): error C2248: 'marks::mids': cannot access private member declared in class 'marks'
+D:\documents\Visual Studio 2022\composition\composition\composition.cpp(56,9): message : see declaration of 'marks::mids'
+D:\documents\Visual Studio 2022\composition\composition\composition.cpp(53,7): message : see declaration of 'marks'
+D:\documents\Visual Studio 2022\composition\composition\composition.cpp(102,29): error C2248: 'marks::finals': cannot access private member declared in class 'marks'
+D:\documents\Visual Studio 2022\composition\composition\composition.cpp(56,15): message : see declaration of 'marks::finals'
+D:\documents\Visual Studio 2022\composition\composition\composition.cpp(53,7): message : see declaration of 'marks'
