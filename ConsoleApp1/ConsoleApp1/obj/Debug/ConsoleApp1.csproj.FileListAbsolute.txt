@@ -1,0 +1,2 @@
+D:\documents\Visual Studio 2022\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csprojAssemblyReference.cache
+D:\documents\Visual Studio 2022\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
