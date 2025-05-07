@@ -1,0 +1,11 @@
+﻿  ConsoleApplication6.cpp
+D:\documents\Visual Studio 2022\ConsoleApplication6\ConsoleApplication6\ConsoleApplication6.cpp(21,2): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\documents\Visual Studio 2022\ConsoleApplication6\ConsoleApplication6\ConsoleApplication6.cpp(22,2): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\documents\Visual Studio 2022\ConsoleApplication6\ConsoleApplication6\ConsoleApplication6.cpp(27,2): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\documents\Visual Studio 2022\ConsoleApplication6\ConsoleApplication6\ConsoleApplication6.cpp(28,2): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\documents\Visual Studio 2022\ConsoleApplication6\ConsoleApplication6\ConsoleApplication6.cpp(40,11): error C2440: 'initializing': cannot convert from 'initializer list' to 'tv'
+D:\documents\Visual Studio 2022\ConsoleApplication6\ConsoleApplication6\ConsoleApplication6.cpp(40,11): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+D:\documents\Visual Studio 2022\ConsoleApplication6\ConsoleApplication6\ConsoleApplication6.cpp(42,5): error C2664: 'void tv::change(char [],char [],float)': cannot convert argument 1 from 'const char [9]' to 'char []'
+D:\documents\Visual Studio 2022\ConsoleApplication6\ConsoleApplication6\ConsoleApplication6.cpp(42,13): message : Conversion from string literal loses const qualifier (see /Zc:strictStrings)
+D:\documents\Visual Studio 2022\ConsoleApplication6\ConsoleApplication6\ConsoleApplication6.cpp(25,10): message : see declaration of 'tv::change'
+D:\documents\Visual Studio 2022\ConsoleApplication6\ConsoleApplication6\ConsoleApplication6.cpp(42,5): message : while trying to match the argument list '(const char [9], const char [8], int)'
