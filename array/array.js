@@ -7,3 +7,6 @@ array.map(function(index , val)
  console.log(index + ": " + val );
 
 });
+let h;
+h=promt("enter input")
+console.log(h);
