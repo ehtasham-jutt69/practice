@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .selected{
+            border:2px solid blue;
+        }
+        .placeholder{
+            min-width: 600px;
+            min-height: 600px;
+            border:2px solid blue;
+        }
+        .error{
+            background-color: pink;
+        }
+        .hidden{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="red">
+        <div class="blue" id="c1">first child</div>
+        <div class="blue" id="c2">second child
+            <div>d</div>
+        </div>
+        <p class="blue" id="para">A para</p>
+        <a href="#" alt="link">1</a>
+        <a href="#" alt="link">2</a>
+        <form action="index.php" id="frm">
+            Names:<input type="text" id="frm-name"><br>
+            Age:<input type="number" id="frm-age"><br>
+            Email:<input type="email" id="frm-email"><br>
+            Semester:<select id="frm-sem">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select>
+            <select multiple id="frm-elec">
+                <option value="mad">mad</option>
+                <option value="wad">wad</option>
+                <option value="waf">waf</option>
+                <option value="sad">sad</option>
+            </select>
+  <input type="submit" id="submit" value="Submit">
+
+        </form>
+    </div>
+    <script>
+        // window.onload=()=>{
+        document.addEventListener("DOMContentLoaded",()=>{
+        //const div_p=document.getElementById("red");
+        //div_p.textContent="<i>Parent<i>";
+        // div_p.innerHTML="<i>Parent<i>";
+
+            
+        // const dom_div=document.getElementsByTagName('div');
+        // for(const divs of dom_div){
+        //     console.log(divs.innerText);
+        // }
+        // for(let i=0;i<dom_div.length;i++){
+        //     console.log(dom_div[i].innerText);
+        // }
+
+        // const blue_elem=document.getElementsByClassName('blue');
+        // for(let blues of blue_elem){
+        //     if(blues.tagName=="DIV"){
+        //         console.log(`ID: ${blues.id} | TEXT: ${blues.innerText}`);
+        //     }
+        // }
+
+        // const divs=document.querySelector('#red');
+        // console.log(divs.innerText);
+
+        // const divs=document.querySelectorAll('div');
+        // for(const d of divs){
+        //     console.log(d.innerText);
+        // }
+
+        // const blue_elem=document.querySelectorAll('.blue');
+        // for(let blues of blue_elem){
+        //     if(blues.tagName=="DIV"){
+        //         console.log(`ID: ${blues.id} | TEXT: ${blues.innerText}`);
+        //     }
+        // }
+
+        // const element = document.getElementById("red");
+        // element.className="blue big";
+        // element.classList.add("highlight");
+        // element.classList.toggle("highlight");
+        // element.style.color="red";
+        // element.style.backgroundColor="pink";
+
+        // const element=document.querySelectorAll('a');
+        // for(let elem of element){
+        //     console.log(elem.href);
+        // }
+
+        // const element=document.querySelectorAll('a[href="#"]');
+        // element.forEach(el => {
+        //     console.log(el.innerText);
+        // });
+        // const div_p1 = document.getElementById("red");
+        //const div_p_child = div_p1.childNodes;
+        // for(d of div_p_child){
+        //     console.log("Child Nodes:", d.innerText);
+        // }
+
+        // const div_p = document.getElementById("c2");
+        // const div_p_parent = div_p.parentNode;
+        // const div_p_nextSib = div_p.nextSibling;
+        // const div_p_prev_sib = div_p.previousSibling;
+        // const nextElem = div_p.nextElementSibling;
+        // const prevElem = div_p.previousElementSibling;
+
+        // console.log("Parent:", div_p_parent.id);
+        // console.log("Next Sibling (raw):", div_p_nextSib);
+        // console.log("previous Sibling (raw):", div_p_prev_sib);
+        // console.log("Next Element Sibling:", nextElem.nodeName);
+        // console.log("Previous Element Sibling:", prevElem.nodeType);
+
+        // const div_p1 = document.getElementById("red");
+        // const textNode = document.createTextNode("adding using js");
+        // const i_tag=document.createElement('i');
+        // i_tag.appendChild(textNode);
+        // div_p1.appendChild(i_tag);
+
+        // const parent = document.getElementById("red");
+        // const c1 = document.getElementById("c1");
+        // const c2 = document.getElementById("c2");
+        // const para = document.getElementById("para");
+
+        // parent.removeChild(c1);
+
+        // const newDiv = document.createElement("div");
+        // newDiv.textContent = "I replaced c2";
+        // newDiv.id = "newC2";
+        // parent.replaceChild(newDiv, c2);
+
+        // const anotherDiv = document.createElement("div");
+        // anotherDiv.textContent = "Inserted before para";
+        // parent.insertBefore(anotherDiv, para);
+
+        // function insertAfter(newNode,currentNode){
+        //     currentNode.parentNode.insertBefore(newNode,currentNode.nextSibling);
+        // }
+        // const afterPara = document.createElement("div");
+        // afterPara.textContent = "Inserted after para";
+        // insertAfter(afterPara, para); 
+
+        // const appended = document.createElement("div");
+        // appended.textContent = "Appended at the end";
+        // parent.appendChild(appended);
+
+        // const prepended = document.createElement("div");
+        // prepended.textContent = "Prepended at the top";
+        // parent.prepend(prepended);
+
+        // const pdiv=document.querySelector("#red");
+        // const p=document.createElement('p');
+        // p.textContent="Dynamically";
+        // pdiv.insertAdjacentElement("beforeend",p);
+
+        // const pdiv=document.querySelector("#red");
+        // function testClick(){
+        //     console.log("div is clicked");
+        // }
+        // pdiv.addEventListener("click",testClick)
+
+        // const pdiv=document.querySelector("#red");
+        // pdiv.addEventListener("click",()=>{
+        //     console.log("div is clicked");
+        // })
+
+        // function display_div(e){
+        //     console.log(e.currentTarget.innerText);
+        //     e.currentTarget.classList.toggle("selected");
+        //     e.stopPropagation();
+        // }
+
+        // const divs=document.querySelectorAll("div");
+        // for(let div of divs){
+        //     div.addEventListener("click",display_div,true);
+        // }
+
+        // const p_div=document.querySelector("#red");
+        // const imgArr=[
+        //     "Screenshot 2025-03-05 005451.png","Screenshot 2025-03-05 005451.png","Screenshot 2025-03-05 005451.png","Screenshot 2025-03-05 005451.png","Screenshot 2025-03-05 005451.png","Screenshot 2025-03-05 005451.png"
+        // ]
+
+        // for(const src of imgArr){
+        //     let img=document.createElement("img");
+        //     img.src=src;
+        //     p_div.appendChild(img)
+        // }
+        // p_div.addEventListener("click",(e)=>{
+        //     const elem=e.currentTarget.tagName;
+        //     const elem1=e.target;
+        //     console.log(elem);
+        //     if(elem1.tagName=="IMG"){
+        //         elem1.classList.toggle("selected");
+        //     }
+        // })
+
+        // const p_div=document.querySelector("#red");
+        // const imgArr=[
+        //     "Screenshot 2025-03-05 005451.png","Screenshot 2025-03-05 005451.png","Screenshot 2025-03-05 005451.png","Screenshot 2025-03-05 005451.png","Screenshot 2025-03-05 005451.png","Screenshot 2025-03-05 005451.png"
+        // ]
+
+
+        // const p_div=document.querySelector("#red");
+        // const imgArr=[
+        //     "Screenshot 2025-03-05 005451.png","Screenshot 2025-03-05 005451.png","Screenshot 2025-03-05 005451.png","Screenshot 2025-03-05 005451.png","Screenshot 2025-03-05 005451.png","Screenshot 2025-03-05 005451.png","Screenshot 2025-03-05 005451.png","Screenshot 2025-03-05 005451.png","Screenshot 2025-03-05 005451.png","Screenshot 2025-03-05 005451.png","Screenshot 2025-03-05 005451.png","Screenshot 2025-03-05 005451.png","Screenshot 2025-03-05 005451.png","Screenshot 2025-03-05 005451.png","Screenshot 2025-03-05 005451.png","Screenshot 2025-03-05 005451.png","Screenshot 2025-03-05 005451.png","Screenshot 2025-03-05 005451.png","Screenshot 2025-03-05 005451.png","Screenshot 2025-03-05 005451.png","Screenshot 2025-03-05 005451.png","Screenshot 2025-03-05 005451.png","Screenshot 2025-03-05 005451.png","Screenshot 2025-03-05 005451.png"
+        // ]
+        // for(const src of imgArr){
+        //     let img=document.createElement("img");
+        //     img.dataset.src=src;
+        //     img.classList.add("placeholder");
+        //     p_div.appendChild(img);
+        // }
+        // function loadImage() {
+        //     const imgs = document.querySelectorAll("#red img.placeholder");
+        //     for (const img of imgs) {
+        //         const scrollPosition = window.scrollY + window.innerHeight;
+        //         if (img.offsetTop < scrollPosition) {
+        //             img.src = img.dataset.src;
+        //         }
+        //     }
+        // }
+        // loadImage();
+        // window.addEventListener("scroll", loadImage);
+
+        const frm=document.querySelector("#frm");
+        frm.addEventListener("submit",validate);
+        function validate(e){
+            const name=document.querySelector("#frm-name");
+            if(name.value==""){
+                e.preventDefault();
+                name.classList.add("error");
+            }else{
+                name.classList.remove("error")
+            }
+            const age=document.querySelector("#frm-age");
+            if(age.value<0||age.value>150||age.value==""||isNaN(age.value)||!isFinite(age.value)){
+                e.preventDefault();
+                age.classList.add("error");
+            }else{
+                age.classList.remove("error")
+            }
+            const email=document.querySelector("#frm-email");
+            const reEmail = /^[^@]+@[^@]+(\.[^@]+)+$/;
+            if(!reEmail.test(email.value)){
+                e.preventDefault();
+                email.classList.add("error");
+            }else{
+                email.classList.remove("error")
+            }
+
+            const sem=document.querySelector("#frm-sem");
+            const elec=document.querySelector("#frm-elec");
+            if(parseInt(sem.value)>=7){
+                elec.classList.remove("hidden");
+                if(elec.selectedOptions.length!=2){
+                    e.preventDefault();
+                    sem.classList.add("error");
+                }else{
+                    sem.classList.remove("error")
+                }
+            }
+            else{
+                elec.classList.add("hidden");
+            }
+        }
+        
+    })
+    </script>
+</body>
+</html>
