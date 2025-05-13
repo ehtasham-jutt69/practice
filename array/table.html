@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body id="body" >
+        <script>
+            let table = document.createElement("table");
+            let thead = document.createElement("thead");
+            let tr = document.createElement("tr");
+            let tbody = document.createElement("tbody");
+        
+            let header = ["Reg", "Name", "CGPA"];
+            let data = [
+                [1, "Ali", 3.2],
+                [2, "Hamad", 3.4],
+                [3, "Zeeshan", 3.6]
+            ];
+        
+            const body = document.querySelector('#body');
+        
+            for (let heading of header) {
+                let th = document.createElement("th");
+                th.textContent = heading;
+                tr.appendChild(th);
+            }
+            thead.appendChild(tr);
+            table.appendChild(thead);
+        
+            for (let Data of data) {
+                let tr = document.createElement("tr");
+                for (let d of Data) {
+                    let td = document.createElement("td");
+                    td.textContent = d;
+                    tr.appendChild(td);
+                }
+                tbody.appendChild(tr);
+            }
+        
+            table.appendChild(tbody);
+            body.appendChild(table);
+        
+            const button = document.createElement("button");
+            button.textContent = "Calculate Average CGPA";
+            body.appendChild(button);
+        
+            button.addEventListener("click", () => {
+                let total = 0;
+                let rows = tbody.querySelectorAll("tr");
+                for (let row of rows) {
+                    let cgpa = parseFloat(row.children[2].textContent);
+                    total += cgpa;
+                }
+                let average = (total / rows.length).toFixed(2);
+        
+                
+                let avgRow = document.createElement("tr");
+                let td1 = document.createElement("td");
+                td1.colSpan = 2;
+                td1.textContent = "Average CGPA";
+                let td2 = document.createElement("td");
+                td2.textContent = average;
+                avgRow.appendChild(td1);
+                avgRow.appendChild(td2);
+        
+                tbody.appendChild(avgRow);
+            });
+        </script>
+        
+</body>
+</html>
