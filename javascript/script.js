@@ -1,64 +1,64 @@
-// let st="aaa";
-// st=st+3;
-// console.log(typeof(st));
-// const obj={
-// a:12,
-// "ali":"saad",
-// c:"hkk",
-// d:undefined
+let st="aaa";
+st=st+3;
+console.log(typeof(st));
+const obj={
+a:12,
+"ali":"saad",
+c:"hkk",
+d:undefined
 
 
-// }
+}
 // you can also define an key outside the class
-// obj['f']="newww";   
+obj['f']="newww";   
 // you can also reassign a value to key 
-// obj.ali=10;
-// console.log(obj);
+obj.ali=10;
+console.log(obj);
 
 
-//let colors = ["red", "green", "blue"];
+let colors = ["red", "green", "blue"];
 
-//for (let index in colors) {
- // console.log(index , colors[index]);        // prints indexes (0, 1, 2)
-  //console.log(colors[index]); // prints values (red, green, blue)
-//}
+for (let index in colors) {
+ console.log(index , colors[index]);        // prints indexes (0, 1, 2)
+  console.log(colors[index]); // prints values (red, green, blue)
+}
 
 
-// let fruit = ["apple", "banana", "mango"];
+let fruit = ["apple", "banana", "mango"];
 
-// for (let c of fruit) {
-//   console.log(c);
-// }
+for (let c of fruit) {
+  console.log(c);
+}
 
 // its an array 
-// const fruit = [
-//     { name: "apple", price: 50 },
-//      {name: "banana", price: 30 },
-//      {name: "mango", price: 100} 
-// ];
+const fruits = [
+    { name: "apple", price: 50 },
+     {name: "banana", price: 30 },
+     {name: "mango", price: 100} 
+];
   
   
-//   for (let f in fruit) {
-//     console.log(f);
-//   }
+  for (let f in fruit) {
+    console.log(f);
+  }
   
 
 // function to count vovel in string 
-// let namess = prompt("Enter a string:");
-// console.log(namess)
+let namesss = prompt("Enter a string:");
+console.log(namess)
 
-// let vovel = (st) => {
-//   let count = 0;
-//   // Loop through each character in the string
-//   for (let char of st) {
-//     // Check if the character is a vowel
-//     if (char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u' ||
-//         char === 'A' || char === 'E' || char === 'I' || char === 'O' || char === 'U') {
-//       count++;
-//     }
-//   }
-//   return count;
-// };
+let vovel = (st) => {
+  let count = 0;
+  // Loop through each character in the string
+  for (let char of st) {
+    // Check if the character is a vowel
+    if (char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u' ||
+        char === 'A' || char === 'E' || char === 'I' || char === 'O' || char === 'U') {
+      count++;
+    }
+  }
+  return count;
+};
 
 // console.log("Vowel count: " + vovel(namess)); // Output the result
 const prompt=require("prompt-sync")();
