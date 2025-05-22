@@ -10,7 +10,7 @@
 
 // }
 // // you can also define an key outside the class
-// obj['f']="newww";   
+// obj.f=`newww`;   
 // // you can also reassign a value to key 
 // obj.ali=10;
 // console.log(obj);
@@ -18,17 +18,37 @@
 
 // let colors = ["red", "green", "blue"];
 
-// for (let index in colors) {
-//  console.log(index , colors[index]);        // prints indexes (0, 1, 2)
-//   console.log(colors[index]); // prints values (red, green, blue)
+// for (let i in colors) {
+//  //console.log(i , colors[i]);        // prints indexes (0, 1, 2)
+//   console.log(colors[i]); // prints values (red, green, blue)
 // }
 
 
-// let fruit = ["apple", "banana", "mango"];
 
-// for (let c of fruit) {
-//   console.log(c);
+// const student={
+//   "name":`Ali` ,
+//   age: 14,
+//   marks:[12 , 10 ,15],
+
 // }
+
+// for(let index of student)
+// {
+//   console.log( index)
+// }
+let t=0;
+
+let fruit = [
+  { name:"apple" , price :12}  , 
+  { name : "banana"  , price:15 } ,
+  {name: "mango" , price :18} 
+];
+for (let c of fruit) {
+  t+=c.price;
+  console.log( c);
+  console.log(c.name  + c.price);
+}
+console.log(t);
 
 // // its an array 
 // const fruits = [
